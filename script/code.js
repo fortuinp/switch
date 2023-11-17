@@ -167,8 +167,133 @@
 //     console.log(num1+num2);
 // })(3,4)
 
-let greeting =" Hello World ";
-let newA = Array.from(greeting)
-console.log(newA);
-// console.log(newA.slice(1,6).concat(newA.slice(7,12)));
-console.log(greeting.trim().split(""));
+// let greeting =" Hello World ";
+// let newA = Array.from(greeting)
+// console.log(newA);
+// // console.log(newA.slice(1,6).concat(newA.slice(7,12)));
+// console.log(greeting.trim().split(""));
+
+// let firstname = "Siseko"
+
+// function text(){
+// console.log("inside -> "+firstname);
+// }
+// text()
+// function chang(){
+//     firstname="Phinda"
+//     console.log('inside2nd ' + firstname)
+    
+// }
+// chang()
+// console.log('outside ')
+
+//variable is hoisted but function is not
+// display('Siseko')
+// let display = function(firstName) {
+//     console.log(`Your name is ${firstName}`);
+// }
+// //display('Siseko')
+
+//Q
+// console.log(secondname);
+// function test{
+//     secondname="spiderman"
+// }
+
+// let nums = [1]
+
+// nums.push(3,4)
+// console.log(nums);
+
+
+//recursive function function that calls itself and can get a loop
+// function display(){
+//     console.log("hi there");
+//     display()
+// }
+// display()
+
+//joels function error example
+//change variable to glabal from local so we can increment 1by1 and change the --limit
+// let cnt = 1
+// function repeat(limit) {
+//     if(cnt <= limit) {
+//     console.log(cnt);
+//     cnt++
+//     repeat(limit)
+// }
+// }
+// repeat(10)
+
+//reference and UD error
+// function display(){
+//     let num1=9
+//     console.log();
+// }
+
+// can create object by onject literal or Object create or newkeyword/constructor 
+//literal object curly bracket
+// let person={
+//     firstname : 'joel',
+//     lastname : 'Mukanya'
+// }
+// console.log(person);
+// //object.create  can clone theis one
+// console.log("object.create()");
+// let smartphone = Object.create({
+//    make : "samsung",
+//    model: "A 51"
+// })
+
+// console.log(smartphone);
+// console.log("new keyword | object constructor");
+// let computer= new Object({
+//     brand : "dell",
+//     amount: 18000
+// })
+// console.log(computer);
+
+
+//factory function
+//camelCase00
+// allow us to create and return an object
+// function person(){
+//     let data = {
+//         firstname:'peter',
+//         age:20
+//     }
+//     return data
+// }
+
+function person(firstName,lastname,age,hrs,rate){
+    //creating and returning an object
+    return{
+        // name:firstName,
+        // surname:lastname,
+        // userAge :age,
+        // useRate : rate
+        firstName,lastname,age,hrs,rate
+    }
+}
+let person1=person('Peter','Mukanya',3,60,500)
+console.log(person1);
+let person2=person('John','Mukanya',1,20,350)
+console.log(person2);
+
+//constructive function allows us to create an object.Then return this
+//name of fuction must be uppercase
+function Laptop(make,amount){
+    this.make=make
+    this.amount=amount
+    // it does this(JS)==> return this
+}
+
+let laptop1= new Laptop ('HP',18000)
+let laptop2= new Laptop('Dell',20000)
+console.log(laptop1);
+console.log(laptop2);
+//check for DNA
+console.log(laptop2 instanceof Laptop)
+
+
+
