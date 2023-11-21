@@ -378,10 +378,10 @@
 // console.log(Object.values(Laptop));
 
 //cloning an object uspng (spread oo)
-let car1={
-    make: 'toyota',
-    year: 2023
-}
+// let car1={
+//     make: 'toyota',
+//     year: 2023
+// }
 // let car2 =car1  //clones everything including reference number
 // console.log("==car1==");
 // console.log(car1);
@@ -424,17 +424,17 @@ let car1={
 
 
 
-// String method
-let firstName = 'Joel'
-console.log(firstName.split("").reverse().join(""));
-console.log(firstName.charAt(1));
-console.log(firstName.endsWith("l"));
-console.log(firstName.includes("p"));
-console.log(firstName.lastIndexOf("e"));
-console.log(firstName.replace("l","t"));
-console.log(firstName.repeat(5));
-console.log(firstName.endsWith("n"));
-console.log(firstName.split(''));
+// // String method
+// let firstName = 'Joel'
+// console.log(firstName.split("").reverse().join(""));
+// console.log(firstName.charAt(1));
+// console.log(firstName.endsWith("l"));
+// console.log(firstName.includes("p"));
+// console.log(firstName.lastIndexOf("e"));
+// console.log(firstName.replace("l","t"));
+// console.log(firstName.repeat(5));
+// console.log(firstName.endsWith("n"));
+// console.log(firstName.split(''));
 /*
 Exercises on the below methods
 - charAt()
@@ -453,11 +453,77 @@ Exercises on the below methods
 - split()
 */
 
-// let numbers = [2, 4, 11, 1]
+//let numbers = [2, 4, 11, 1]
 // let a = 3
 // let b = 2
 // console.log(`Highest number: ${Math.max(...numbers)}`);
 // console.log(`Lowest number: ${Math.min(...numbers)}`);
-// // 3^2 = 3 * 3
+// //3^2 = 3 * 3
 // console.log(`pow(x,y): ${Math.pow(a, b)}`);
 // console.dir(Math);
+
+
+//===REVISION===
+//1. reading an instruction properly ====> create an array that contain 6 elements but the first 2 must be a nummber
+//make sure element posItion 4 is uppercase...position is index
+
+// let data = [2,3,'a','b','C','d'];
+// console.log(data);
+// //create 2 objects, add them to an array,log the objects as wll
+// let person1={
+//     firstname :'thimna'
+// }
+// let person2={
+//     firstname: 'vero'
+// }
+
+// let personDetails =[]
+// personDetails.push(person1)
+// personDetails.push(person2)
+// console.log(personDetails);
+// console.log(person1)
+// console.log(person2)
+
+// //2.we use if /switch statement when theres a *condition*...else if
+// let firstname= 'zubair'
+// let state= 'late'
+// if (state=='present'){
+//     console.log('present')}
+//     else if(state=='late'){
+//         console.log('late')
+//     }
+//     else {
+//         console.log('absent')
+//     }
+
+//converting the above to switch
+//case return boolean so our switch must be boolean.... != not equal to
+
+// let firstname= 'zubair'
+// let state= 'late'
+
+// switch(true){
+//     case state=='present':
+//     console.log('present')
+//     break;
+    
+//     case state !="":
+//     console.log('late')
+//     break;
+//     case state !="":
+//     console.log('late-> Final warning')
+//     break;
+//     default:
+//     console.log('absent')
+//     break;
+// }
+
+
+//MATH method
+let numbers=[9,4,2,5,10]
+function highestno(args){
+  for (let number in args){
+    console.log(number);
+  }
+}
+highestno()
