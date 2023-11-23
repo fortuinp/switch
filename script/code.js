@@ -464,6 +464,10 @@ Exercises on the below methods
 
 
 //===REVISION===
+//===REVISION===
+//===REVISION===
+//===REVISION===
+
 //1. reading an instruction properly ====> create an array that contain 6 elements but the first 2 must be a nummber
 //make sure element posItion 4 is uppercase...position is index
 
@@ -519,11 +523,175 @@ Exercises on the below methods
 // }
 
 
-//MATH method
-let numbers=[9,4,2,5,10]
-function highestno(args){
-  for (let number in args){
-    console.log(number);
-  }
+// //MATH method
+// let numbers=[9,4,2,5,10]
+// function highestno(args){
+//   for (let number in args){
+//     console.log(number);
+//   }
+// }
+// highestno()
+
+
+//23/11
+//spread operator,rest parameter...notes
+
+//Math methods
+
+//PI is constant
+//console.log(Math.PI);
+
+//round to nearest integer
+//Math.round(number)
+
+//rounds up to the next integer
+//Math.ceil(number)
+
+//rounds down 
+//Math.floor(number)
+//returns integer number if decimal
+//Math.trunc(number)
+//both floor and trunc returns same value
+
+//right shift
+//3=0011
+// >>2= removes 2 bites  from 3
+//console.log(3>>2);
+
+// //date
+// //on constructor function we use new and capital letter
+// let currentDate=new Date();
+// console.log(currentDate);
+// console.dir(currentDate);
+// console.error('this an error')
+// console.log(currentDate.getDate());
+// //month starts counting from 0 so add 1 
+// console.log(currentDate.getMonth()+1);
+// //specify own date
+// let anotherDate=new Date("2022-11-5")
+// console.log(anotherDate);
+// let anotherrDate=new Date("2022","11","5")
+// console.log(anotherrDate);
+// let thirdAttemp= new Date(2021,11,11)
+// console.log(thirdAttemp);
+
+
+// //STRING METHODS 
+// let sentence='i love programming'
+// console.log(sentence);
+
+// function arrOfChars(sentence){
+//   let characters=[]
+//   for (let c of sentence){
+//     characters.push(c)
+//   }
+//   return characters
+// }
+
+// console.log(arrOfChars(sentence));
+// //can use space /words to split
+// console.log(sentence.split(""));
+// console.log(sentence.replace("love","hate"));
+
+
+
+/*====operators====
+-Arithmetic +,/,**(exponents),*,%(reminder),-,++,--
+-Assignment =,+=,etc..
+-Comparison >=,<=,!=,==,===
+-Logical &&,||,!
+-Type of : type and instanceof
+
+*/
+//promp returns a string
+// let num1=prompt('enter num1')
+// let num2=prompt('enter2')
+// console.log(+num1+ +num2);
+
+// //ternary operator
+// let salary=50000
+// let bonus=2000
+// let performance=true
+
+// console.log(performance ? salary+bonus : salary);
+
+//builtin functions...on Joels book
+//checks if its a number
+//console.log(isFinite("8"));
+
+//confirm is also boolean
+//let isReady = confirm("Are you ready? ")
+// if(isReady) {
+//     console.log("Quiz time");
+// }else {
+//     console.log("Self-study");
+// }
+ 
+//recursive function--- a loop without a loop, function that calls its self we need if statement to make it stop
+// let cnt=0
+// function numbersUntilTen(limit){
+// if (cnt < limit){
+//   cnt++
+//   console.log(cnt)
+//  numbersUntilTen(limit);
+// }
+// }
+// numbersUntilTen(10)
+
+//joels function error example
+//change variable to glabal from local so we can increment 1by1 and change the --limit
+// let cnt = 1
+// function repeat(limit) {
+//     if(cnt <= limit) {
+//     console.log(cnt);
+//     cnt++
+//     repeat(limit)
+// }
+// }
+// repeat(10)
+// let count=0
+// let numbers=[1,2,3,4,5]
+// //let limit=numbers.length
+// function readnums(){
+// if (count <= numbers.length-1){
+//   console.log(numbers[count])
+//   count++
+//   readnums()
+// }
+// }
+// readnums()
+
+//LOOP
+//for in displays indexes, for of displays elements
+//let numbers= [9,6,11,34]
+// for(let n of numbers){
+//   console.log(n);
+// }
+
+
+//for each makes life easier
+// numbers.forEach((number,i)=>{
+//   console.log(number,i);
+// })
+
+//why do we clone objects..for a backoup
+let num1=[3,6,9]
+//clone
+let num2=[...num1]
+
+//EMPTYING ARRAY
+//delete first array
+num1.length=0
+//reassign it to empty array
+num1=[]
+//
+num1.splice(0,num1.length)
+
+while(num1.length >0){
+  num1.pop()
 }
-highestno()
+//reduce takes 2 arguments, current element and next element .
+
+num1.reduce
+
+console.log(num1,num2);
