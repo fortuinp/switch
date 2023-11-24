@@ -674,24 +674,90 @@ Exercises on the below methods
 //   console.log(number,i);
 // })
 
-//why do we clone objects..for a backoup
-let num1=[3,6,9]
-//clone
-let num2=[...num1]
+// //why do we clone objects..for a backoup
+// let num1=[3,6,9]
+// //clone
+// let num2=[...num1]
 
-//EMPTYING ARRAY
-//delete first array
-num1.length=0
-//reassign it to empty array
-num1=[]
-//
-num1.splice(0,num1.length)
+// //EMPTYING ARRAY
+// //delete first array
+// num1.length=0
+// //reassign it to empty array
+// num1=[]
+// //
+// num1.splice(0,num1.length)
 
-while(num1.length >0){
-  num1.pop()
+// while(num1.length >0){
+//   num1.pop()
+// }
+// //reduce takes 2 arguments, current element and next element .
+
+// num1.reduce
+
+// console.log(num1,num2);
+
+
+// //Create a function that will take an array(of numbers) as a parameter. Then every time you call the function with the same array it will display the next element(number) in the array.
+// let count=0
+// let numbers=[1,2,3,4,5]
+// function nextn(...arr){
+// for (i=0;i<arr.length; i++){
+//   console.log(arr[i]);
+// }
+
+// }
+// nextn(...numbers)
+
+// let base = 2
+// let height=3
+// console.log(areaOfTriangle);
+
+// function calcArea(base,height){
+//   let areaOfTriangle=(base*height)/2
+//   console.log(areaOfTriangle);
+// }
+// calcArea(3,2)
+
+
+
+
+// //let limit=numbers.length
+// function readnums(...arr){
+// if (count <= arr.length){
+//   console.log(arr[count])
+//   count++
+//   // readnums()
+// }
+// }
+// readnums(52,5,5,8,7,3)
+
+
+// // //let limit=numbers.length
+// // function readnums(){
+// // if (count <= numbers.length-1){
+// //   console.log(numbers[count])
+// //   count++
+// //   readnums()
+// // }
+// // }
+// readnums()
+
+
+// function agetodays(age){
+//   let days=age*365
+//   console.log(days);
+// }
+// agetodays(20)
+
+//Create a function that will take in an array or rest parameter and then display the sum of numbers in the array. If an array does not contain any numbers, then display a message : "Provide only numbers"
+
+let count=0
+let numbers=[1,2,3,4,5]
+function nextn(...arr){
+for (i=0;i<arr.length; i++){
+  console.log(arr[i]);
 }
-//reduce takes 2 arguments, current element and next element .
 
-num1.reduce
-
-console.log(num1,num2);
+}
+nextn(...numbers)
+numbers.red
